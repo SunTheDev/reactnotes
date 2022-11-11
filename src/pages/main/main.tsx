@@ -27,10 +27,13 @@ export const Main = () => {
   }, []);
 
   return (
-    <div className="postbox">
-      {postsList?.map((post) => (
-        <Post post={post} />
-      ))}
+    <div>
+      <h1 style={{ color: "rgb(52, 93, 123)" }}>Welcome to Notes!</h1>
+      <div className="postbox">
+        {postsList?.map((post) => (
+          <Post post={post} />
+        ))}
+      </div>
     </div>
   );
 };

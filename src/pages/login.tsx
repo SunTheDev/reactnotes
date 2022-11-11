@@ -12,8 +12,10 @@ export const Login = () => {
 
   return (
     <div>
-      <p>Sign In With Google To Continue</p>
-      <button onClick={signInWithGoogle}>Sign In with Google</button>
+      <p style={{ color: "rgb(52, 93, 123)" }}>Select Login Method Below...</p>
+      <button className="googleSignIn" onClick={signInWithGoogle}>
+        Sign In with Google
+      </button>
     </div>
   );
 };
